@@ -1,8 +1,12 @@
 {
   "routes": [
     {
-      "route": "/api/*",
-      "allowedRoles": ["anonymous"]
+      "route": "/api/products/*",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/.auth/login/aad",
+      "statusCode": 404
     }
   ],
   "navigationFallback": {
